@@ -1,0 +1,64 @@
+html {
+    background-image: url('http://res.cloudinary.com/grimly/image/upload/v1468352955/black-frame_wjz9st.png');
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    font-family: 'Lobster', cursive;
+    font-size: 24px;
+}
+
+.container {
+    position: absolute;
+    top: 170px;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    width: 800px;
+}
+
+.row {
+    display: block;
+    width: 100%;
+    text-align: center;
+}
+
+#new-quote-btn {
+    font-family: 'Lobster', cursive;
+    font-size: 22px;
+    letter-spacing: 1px;
+    padding: 8px;
+    text-decoration: none;
+    outline: none;
+    border-radius: 18px;
+    background-color: #FFFFFF;
+    box-shadow: 2px 1.5px 1.5px;
+    border: 2px solid #000000;
+}
+
+#new-quote-btn:active {
+    position: relative;
+    top: 1px;
+    outline: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    -user-select: none;
+}
+
+.shadow-box-container {
+    box-shadow: 5px 5px 5px, -5px 5px 5px, 5px -5px 5px, -5px -5px 5px;
+    min-height: 200px;
+    width: 500px;
+    margin: 35px auto;
+    padding: 8px;
+    font-size: 16px;
+}
+
+.loading {
+    background: url('loader.gif') no-repeat center center;
+}
+
