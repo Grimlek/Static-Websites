@@ -1,19 +1,30 @@
 html {
-    /*background-image: url('images/cold.png');*/
-    /*background-attachment: fixed;*/
-    /*background-repeat: no-repeat;*/
-    /*-webkit-background-size: cover;*/
-    /*-moz-background-size: cover;*/
-    /*-o-background-size: cover;*/
-    /*background-size: cover;*/
     font-size: 24px;
 }
 
-html, body
+html,
+body
 {
     height: 100%;
 }
 
+section {
+    text-align: center;
+}
+
+.weather-info-wrapper {
+    display: none;
+}
+
+.info-temp:after {
+    content: "\2109"
+}
+
+.error {
+    color: #B22222;
+}
+
 .loading {
     background: url('images/loader.gif') no-repeat center center;
+    min-height: 350px;
 }
