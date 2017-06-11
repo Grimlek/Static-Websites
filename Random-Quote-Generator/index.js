@@ -13,7 +13,7 @@ document.getElementById("new-quote-btn").addEventListener("click", function(even
     quoteEl.innerHTML = "";
     authorEl.innerHTML = "";
 
-    loadJSON('http://quotes.stormconsultancy.co.uk/popular.json',
+    loadJSON('https://quotes.stormconsultancy.co.uk/popular.json',
         function(data) {
             var randomObj = data[getRandomIntInclusive(0, data.length)];
             quoteEl.innerHTML = randomObj.quote;
