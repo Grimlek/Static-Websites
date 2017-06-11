@@ -3,17 +3,14 @@ var kelvinTemperature;
 window.onload = function() {
 
     navigator.geolocation.getCurrentPosition(function(location) {
-        console.log(location.coords.latitude);
-        console.log(location.coords.longitude);
-        console.log(location.coords.accuracy);
 
-        weatherUrl = 'http://api.openweathermap.org/data/2.5/weather?lat=' +
+        weatherUrl = 'https://api.openweathermap.org/data/2.5/weather?lat=' +
             location.coords.latitude + '&lon=' + location.coords.longitude +
             "&APPID=c91312d00d5875753efe8c433770ee39";
 
         loadJSON(weatherUrl,
             function(data) {
-                iconUrl = "http://openweathermap.org/img/w/" + data.weather[0].icon + ".png";
+                iconUrl = "https://openweathermap.org/img/w/" + data.weather[0].icon + ".png";
                 document.getElementsByTagName("img")[0].src = iconUrl;
 
                 kelvinTemperature = data.main.temp;
